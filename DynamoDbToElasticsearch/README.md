@@ -15,3 +15,5 @@ DynamoDB trigger to index/update/remove items to/in/from Elasticsearch domain
 * Supported DynamoDB Types
   * **S** - String
   * **N** - Number
+* [Put Elasticsearch Mapping (optional if you have a field of type Number)](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-put-mapping.html)
+`curl -XPUT **demo**/_mappings/**item**`
