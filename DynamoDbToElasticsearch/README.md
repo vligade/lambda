@@ -1,12 +1,12 @@
 # DynamoDbToElasticsearch
-DynamoDB trigger to index/update/remove items to/in/from Elasticsearch domain
+DynamoDB trigger to index/update/remove items to/in/from Elasticsearch domain. This generic function will index all the DynamoDB table records to an Elasticsearch domain which has tag with Key equal to the DynamoDB table name. Value of the tag indicates which DynamoDB field to use as **_id** property in Elasticsearch.
 
 ## Installation
 
 * Create DynamoDB table
 * Create Elasticsearch domain (this may take up to 10 minutes)
 * Manage tags for your Elasticsearch domain
-  * Add tag with Key equal to your DynamoDB table name. Set the tag Value to the name of a DynamoDB field you want use as Elasticsearch _id
+  * Add tag with Key equal to your DynamoDB table name. Set the tag Value to the name of a DynamoDB field you want use as Elasticsearch **_id**
     ![DynamoDbToElasticsearch](https://velaskec.com/assets/images/DynamoDbToElasticsearch.png)
 * [Put Elasticsearch Mapping (optional if you have a field of type Number)](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-put-mapping.html)
 ```
