@@ -19,6 +19,7 @@ curl -XPUT demo/_mappings/item -d
 }
 ```
 * Create AWS Lambda and provide [DynamoDbToElasticsearch/index.js](index.js) content as function body
+* Create a trigger in DynamoDB table and attach AWS Lambda function you just created
 
 ## Limitations
 
