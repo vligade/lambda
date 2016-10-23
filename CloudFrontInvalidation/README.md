@@ -1,5 +1,6 @@
 # CloudFrontInvalidation
-This generic function will invalidate CloudFront distribution on S3 event. Function has caching in place to avoid throttling and to improve performance. 
+This generic function will invalidate CloudFront distribution on S3 event.
+**Function has caching in place to avoid throttling and to improve performance.**
 
 ## Installation
 

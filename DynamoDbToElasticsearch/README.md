@@ -1,5 +1,6 @@
 # DynamoDbToElasticsearch
-DynamoDB trigger to index/update/remove items to/in/from Elasticsearch domain. This generic function will index all the DynamoDB table records to an Elasticsearch domain which has tag with Key equal to the DynamoDB table name. Value of the tag indicates which DynamoDB field to use as **_id** property in Elasticsearch.
+This generic function will index all the DynamoDB table records to an Elasticsearch domain which has tag with Key equal to the DynamoDB table name. Value of the tag indicates which DynamoDB field to use as **_id** property in Elasticsearch.
+**Function has caching in place to avoid throttling and to improve performance.**
 
 ## Installation
 
